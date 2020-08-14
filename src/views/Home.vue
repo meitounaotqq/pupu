@@ -189,6 +189,8 @@
       
 
 <my-footer></my-footer>
+<my-show></my-show>
+<my-right></my-right>
 
 <!-- 唯一div -->
   </div>
@@ -530,6 +532,7 @@
 #zheng{
   width: 1200px;
   margin: 0 auto;
+  padding-bottom:30px ;
   padding-top: 30px;
 }
 </style>

@@ -9,7 +9,7 @@
                     <li><a href="/login">登录</a></li>  
                     <li id="my_ul1_li"><a href="javascript:;">
                         微信商城
-                        <img src="../assets/home/jiantou_03.png" alt="">
+                        <img src="../assets/home/jiantou_03.png">
                     </a>
                     </li>     
                 </ul>
@@ -42,13 +42,13 @@
                 <li><a href="#">公司动态</a></li>
             </ul>
         </div>
+        <hr>
     </div>
 </template>
 <style scoped>
-#product237 hr{
-    /* width: 100%; */
-    border:1px solid  #f00;
-    margin-top:0px ;
+hr{
+    margin-top: 0;
+    border:1px solid #e62129;
 }
 #my_ul1{
   display:flex;
@@ -85,12 +85,14 @@
   color:#ff5722;
 }
 /* 搜索栏 */
+
 .top-search {
     width: 1200px;
     height: 93px;
     margin: 0 auto;
     box-sizing: border-box;
     overflow: hidden;
+    margin-left: 280px;
 }
 .top-search a{
     display: inline-block;
@@ -101,14 +103,17 @@
 }
 .top-search .top_kuang{
     float: left;
-    width: 351px;
+    width: 450px;
     height: 31px;
     border: 2px solid #e62129;
-    color: #D1D1D1;
+    color: #000;
     background-image: url(../assets/product237/big.png);
     background-repeat: no-repeat;
-    /* background-position: 10px -80px; */
-    padding-left: 35px;
+    background-position: 10px 50%;
+    padding-left: 30px;
+    margin-left: 165px;
+    margin-top: 25px;
+    outline: none;
 }
 .top-search .top_btn{
     float: left;
@@ -122,6 +127,19 @@
     cursor: pointer;
     border: none;
     margin-left:-95px ;
+    margin-top: 25px;
+    outline: none;
+}
+.top-search .my_a{
+    width: 110px;
+    height: 30px;
+    display: inline-block;
+    margin-top: 25px;
+    background-color: #eee;
+    padding-left: 55px;
+    line-height: 35px;
+    font-size: 14px;
+    background: #f5f5f5 url(../assets/home/cart.png) no-repeat 25px 8px;
 }
 #my_ul{
     width: 1200px;
@@ -132,21 +150,17 @@
     /* margin-left:250px; */
     display:flex;
     margin-right: 120px;
-
 }
-#my_ul>ul>li>a{
+#my_ul a{
     text-decoration: none;
     color: #666;
     font-weight: lighter;
-    /* text-align: center; */
     line-height: 35px;
     font-size: 16px;
     padding-left: 25px;
     padding-right: 25px;
 }
 #my_ul>ul>li{
-    color: #333;
-
     text-align: center;
     line-height: 35px;
     font-size: 16px;
@@ -159,10 +173,10 @@
     line-height: 40px;
     text-align: center;
 }
-#my_ul>ul>li:focus-within{
+#my_ul>ul>li:first-child>a{
     position: relative;
     float: left;
-    width: 220px;
+    width: 170px;
     height: 40px;
     line-height: 40px;
     text-align: center;
@@ -170,7 +184,6 @@
     color: #fff;
     font-size: 16px;
     font-weight: normal;
-    z-index: 99;
-
 }
+
 </style>
