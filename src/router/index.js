@@ -5,11 +5,31 @@ import Register from '../views/Register.vue'
 import Login from '../views/Login.vue'
 import Product237 from '../views/Product237.vue'
 import Search from '../views/Search.vue'
+import Topics from '../views/Topics.vue'
+import Plum from '../views/Plum.vue'
+import Lianshi from '../views/Lianshi.vue'
+import Wenchuang from '../views/Wenchuang.vue'
 
 
 Vue.use(VueRouter)
 
 const routes = [
+  {
+    path:'/wenchuang',
+    component:Wenchuang
+  },
+  {
+    path:'/lianshi',
+    component:Lianshi
+  },
+  {
+    path:'/plum',
+    component:Plum
+  },
+  {
+    path:'/topics',
+    component:Topics
+  },
   {
     path:'/search',
     component:Search

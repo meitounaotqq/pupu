@@ -7,11 +7,13 @@ import swiper from 'swiper'
 import VueAwesomeSwiper from 'vue-awesome-swiper'
 import ElementUi from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'
+// 引入组件
 import Footer from './components/Footer.vue'
 import Product from './components/Product.vue'
 import Show from './components/Show.vue'
 import Right from './components/Right.vue'
 import Search_left from './components/Search_left.vue'
+import Search_top from './components/Search_top.vue'
 
 
 
@@ -24,6 +26,7 @@ Vue.component("my-product",Product);
 Vue.component("my-show",Show);
 Vue.component("my-right",Right);
 Vue.component("my-search_left",Search_left);
+Vue.component("my-search_top",Search_top);
 new Vue({
   router,
   store,

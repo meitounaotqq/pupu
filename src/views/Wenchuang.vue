@@ -15,30 +15,6 @@
         <!-- 分类加载 -->
         <div id="fenlei">
           <ul>
-            <li v-for="(v, k) of img" :key="k">
-              <img :src="v.img" alt="" />
-              <br />
-              <a href="#">{{ v.title }}</a>
-              <p>￥{{ v.price.toFixed(2) }}</p>
-            </li>
-          </ul>
-          <ul>
-            <li v-for="(v, k) of img2" :key="k">
-              <img :src="v.img" alt="" />
-              <br />
-              <a href="#">{{ v.title }}</a>
-              <p>￥{{ v.price.toFixed(2) }}</p>
-            </li>
-          </ul>
-          <ul>
-            <li v-for="(v, k) of img3" :key="k">
-              <img :src="v.img" alt="" />
-              <br />
-              <a href="#">{{ v.title }}</a>
-              <p>￥{{ v.price.toFixed(2) }}</p>
-            </li>
-          </ul>
-          <ul>
             <li v-for="(v, k) of img4" :key="k">
               <img :src="v.img" alt="" />
               <br />
@@ -109,47 +85,10 @@
 export default {
   data() {
     return {
-      img: [],
-      img2: [],
-      img3: [],
-      img4: [],
+      img4: []
     };
   },
   methods: {
-    getData() {
-      this.axios.get("/product/list?category=10").then((res) => {
-        var data = res.data;
-        console.log(data);
-        data.forEach((element) => {
-          if (element.img) {
-            element.img = require("../assets/home/lianshi/" + element.img);
-          }
-          this.img.push(element);
-        });
-      });
-    },
-    getData2() {
-      this.axios.get("/product/list?category=20").then((res) => {
-        var data = res.data;
-        data.forEach((element) => {
-          if (element.img) {
-            element.img = require("../assets/home/xihu/" + element.img);
-          }
-          this.img2.push(element);
-        });
-      });
-    },
-    getData3() {
-      this.axios.get("/product/list?category=30").then((res) => {
-        var data = res.data;
-        data.forEach((element) => {
-          if (element.img) {
-            element.img = require("../assets/home/fushi/" + element.img);
-          }
-          this.img3.push(element);
-        });
-      });
-    },
     getData4() {
       this.axios.get("/product/list?category=40").then((res) => {
         var data = res.data;
@@ -160,12 +99,9 @@ export default {
           this.img4.push(element);
         });
       });
-    },
+    }
   },
   mounted() {
-    this.getData();
-    this.getData2();
-    this.getData3();
     this.getData4();
   },
 };

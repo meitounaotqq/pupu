@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div id="product">
         <div id="top">
             <!-- 欢迎光临 -->
             <div class="top-main">
@@ -18,13 +18,13 @@
             </div>
         </div>
         <!-- 搜索 -->
-        <div class="top-search">
+        <div id="top-search">
             <input type="text" class="top_kuang">
             <button class="top_btn">搜索</button>
             <a href="#" class="my_a">
                 <span>
                     购物车 
-                    <em> {{i}} </em>
+                    <em> {{0}} </em>
                     件
                 </span>
             </a>
@@ -32,12 +32,12 @@
         <!-- 全部商品分类 -->
         <div id="my_ul">
             <ul>
-                <li><a href="#">全部商品分类</a></li>
+                <li><a href="/search">全部商品分类</a></li>
                 <li><a href="/">首页</a></li>
-                <li><a href="#">产业生态</a></li>
-                <li><a href="#">蜡梅</a></li>
-                <li><a href="#">莲识</a></li>
-                <li><a href="#">文创</a></li>
+                <li><a href="/topics">产业生态</a></li>
+                <li><a href="/plum">蜡梅</a></li>
+                <li><a href="/lianshi">莲识</a></li>
+                <li><a href="/wenchuang">文创</a></li>
                 <li><a href="#">技术孵化与转让</a></li>
                 <li><a href="#">公司动态</a></li>
             </ul>
@@ -46,6 +46,7 @@
     </div>
 </template>
 <style scoped>
+
 hr{
     margin-top: 0;
     border:1px solid #e62129;
@@ -86,22 +87,21 @@ hr{
 }
 /* 搜索栏 */
 
-.top-search {
+#top-search {
     width: 1200px;
-    height: 93px;
     margin: 0 auto;
+    height: 93px;
     box-sizing: border-box;
     overflow: hidden;
-    margin-left: 280px;
 }
-.top-search a{
+#top-search a{
     display: inline-block;
     float: right;
     text-decoration: none;
     color: #000;
     font-size: 12px;
 }
-.top-search .top_kuang{
+#top-search .top_kuang{
     float: left;
     width: 450px;
     height: 31px;
@@ -115,7 +115,7 @@ hr{
     margin-top: 25px;
     outline: none;
 }
-.top-search .top_btn{
+#top-search .top_btn{
     float: left;
     width: 93px;
     height: 35px;
@@ -130,7 +130,7 @@ hr{
     margin-top: 25px;
     outline: none;
 }
-.top-search .my_a{
+#top-search .my_a{
     width: 110px;
     height: 30px;
     display: inline-block;

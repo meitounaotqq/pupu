@@ -30,10 +30,10 @@ CREATE TABLE product(
 );
 
 INSERT INTO product VALUES
-(null,'蜡梅香水（色） WINTERSWEET FLOWER PERFUME【发明专利产品】',660.00,'img1',90),
-(null,'蜡梅香水（色） WINTERSWEET FLOWER PERFUME【发明专利产品】',420.00,'img2',90),
-(null,'蜡梅BB霜 WINTERSWEET FLOWER BB CREAM',188.00,'img3',90),
-(null,'蜡梅香氛 WINTERSWEET FRAGRANCE',49.00,'img4',90),
+(null,'蜡梅香水（色） WINTERSWEET FLOWER PERFUME【发明专利产品】',660.00,'one_1.jpg',90),
+(null,'蜡梅香水（色） WINTERSWEET FLOWER PERFUME【发明专利产品】',420.00,'one_2.jpg',90),
+(null,'蜡梅BB霜 WINTERSWEET FLOWER BB CREAM',188.00,'one_3.jpg',90),
+(null,'蜡梅香氛 WINTERSWEET FRAGRANCE',49.00,'one_4.jpg',90),
 -- 10
 (null,'莲识玉肌粉底露 LIQUID FOUNDATION【发明专利产品】',380.00,'two_1.jpg',10),
 (null,'莲识玉肌水露 ADVANCED MOISTURIZING SOFTENING LOTION【发明专利产品】',460.00,'two_2.jpg',10),
@@ -69,7 +69,14 @@ INSERT INTO product VALUES
 (null,'文创-枫木盒黄铜签字笔',95.00,'biji_5.jpg',40),
 (null,'文创-花梨木盒科檀木签字笔',220.00,'biji_6.jpg',40),
 (null,'文创-花梨木套装签字笔',160.00,'biji_7.jpg',40),
-(null,'文创-竹木盒哑光黄铜签字笔',88.00,'biji_8.jpg',40);
+(null,'文创-竹木盒哑光黄铜签字笔',88.00,'biji_8.jpg',40),
 
+# 60   黄连
+
+(null,'黄连礼盒',300.00,'huanglian_lihe.jpg',60),
+(null,'黄连喷雾 COPTIS SPRAY',86.00,'huanglian_penwu.jpg',60),
+(null,'黄连凝胶 COPTIS GEL',68.00,'huanglian_big.jpg',60),
+(null,'黄连沐浴露 COPTIS ESSENCE SHOWER GEL',58.00,'huanglian1.jpg',60),
+(null,'菩璞黄连面膜 COPTIS MASK',88.00,'huanglian2.jpg',60);
 
 

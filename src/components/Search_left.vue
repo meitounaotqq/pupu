@@ -1,62 +1,6 @@
 <template>
   <div id="search">
-    <my-product></my-product>
-    <my-show></my-show>
-    <my-right></my-right>
     <div id="search_botton">
-      <!-- 右边分类框 -->
-      <div id="right">
-        <!-- 右上分类框 -->
-        <div class="sub_category">
-          <h2>按子分类选择</h2>
-          <ul id="ul_subcategory">
-            <li>
-              <a href="#">香水</a>
-            </li>
-
-            <li>
-              <a href="#">香氛</a>
-            </li>
-
-            <li>
-              <a href="#">美妆</a>
-            </li>
-
-            <li>
-              <a href="#">洗护</a>
-            </li>
-
-            <li>
-              <a href="#">礼品卡</a>
-            </li>
-
-            <li>
-              <a href="#">文创</a>
-            </li>
-          </ul>
-        </div>
-        <div class="sub_property">
-          <h2>按品牌/属性选择</h2>
-          <div class="attribute_bd">
-            <dl class="attribute_dl">
-              <dt class="attribute_name">品牌：</dt>
-              <dd class="attribute_val">
-                <div class="h_chooselist">
-                  <a
-                    class="all select"
-                    href="#"
-                  >全部</a>
-                  <a class href="#">文创</a>
-                  <a class href="#">黄连</a>
-                  <a class href="#">莲识</a>
-                  <a class href="#">菩璞</a>
-                </div>
-              </dd>
-            </dl>
-          </div>
-        </div>
-      </div>
-
       <!-- 左边 -->
       <div>
         <div id="classify">
@@ -151,7 +95,9 @@
                     </div>
                     <div class="info">
                       <div class="name">
-                        <a target="_blank" href="#">蜡梅香氛 WINTERSWEET FRAGRANCE</a>
+                        <a target="_blank" href="#"
+                          >蜡梅香氛 WINTERSWEET FRAGRANCE</a
+                        >
                       </div>
                       <div class="price">
                         <b>49.00</b>
@@ -197,7 +143,9 @@
                     </div>
                     <div class="info">
                       <div class="name">
-                        <a target="_blank" href="#">蜡梅香氛 WINTERSWEET FRAGRANCE</a>
+                        <a target="_blank" href="#"
+                          >蜡梅香氛 WINTERSWEET FRAGRANCE</a
+                        >
                       </div>
                       <div class="price">
                         <b>120.00</b>
@@ -220,7 +168,10 @@
                     </div>
                     <div class="info">
                       <div class="name">
-                        <a target="_blank" href="#">蜡梅香氛护手霜（滋润型） WINTERSWEET FLOWER HAND CREAM</a>
+                        <a target="_blank" href="#"
+                          >蜡梅香氛护手霜（滋润型） WINTERSWEET FLOWER HAND
+                          CREAM</a
+                        >
                       </div>
                       <div class="price">
                         <b>38.00</b>
@@ -243,10 +194,10 @@
                     </div>
                     <div class="info">
                       <div class="name">
-                        <a
-                          target="_blank"
-                          href="#"
-                        >蜡梅花瓣洁面皂（12g） WINTERSWEET FLOWER FACIAL CLEANSING SOAP</a>
+                        <a target="_blank" href="#"
+                          >蜡梅花瓣洁面皂（12g） WINTERSWEET FLOWER FACIAL
+                          CLEANSING SOAP</a
+                        >
                       </div>
                       <div class="price">
                         <b>12.00</b>
@@ -269,7 +220,9 @@
                     </div>
                     <div class="info">
                       <div class="name">
-                        <a target="_blank" href="#">艺术香氛寒梅雪100ml FRAGRANCE</a>
+                        <a target="_blank" href="#"
+                          >艺术香氛寒梅雪100ml FRAGRANCE</a
+                        >
                       </div>
                       <div class="price">
                         <b>148.00</b>
@@ -294,12 +247,18 @@
                       <li>
                         <div class="browse_pic">
                           <a href="#" target="_blank">
-                            <img src="../assets/search/left_1.jpg" customtooltip="ProductName" />
+                            <img
+                              src="../assets/search/left_1.jpg"
+                              customtooltip="ProductName"
+                            />
                           </a>
                         </div>
                         <a href="#" target="_blank"></a>
                         <div class="browse_name">
-                          <a href="#" target="_blank">蜡梅香水（色） WINTERSWEET FLOWER PERFUME【发明专利产品】</a>
+                          <a href="#" target="_blank"
+                            >蜡梅香水（色） WINTERSWEET FLOWER
+                            PERFUME【发明专利产品】</a
+                          >
                         </div>
                         <div class="browse_price">
                           <strong>
@@ -316,12 +275,17 @@
                       <li>
                         <div class="browse_pic">
                           <a href="#" target="_blank">
-                            <img src="../assets/search/left_2.jpg" customtooltip="ProductName" />
+                            <img
+                              src="../assets/search/left_2.jpg"
+                              customtooltip="ProductName"
+                            />
                           </a>
                         </div>
                         <a href="#" target="_blank"></a>
                         <div class="browse_name">
-                          <a href="#" target="_blank">莲识水彩唇膏 LOTUS WATEROLOR LIPSTICK</a>
+                          <a href="#" target="_blank"
+                            >莲识水彩唇膏 LOTUS WATEROLOR LIPSTICK</a
+                          >
                         </div>
                         <div class="browse_price">
                           <strong>
@@ -347,7 +311,9 @@
                         </div>
                         <a href="#" target="_blank"></a>
                         <div class="browse_name">
-                          <a href="#" target="_blank">莲识玉肌粉底露 LIQUID FOUNDATION【发明专利产品】</a>
+                          <a href="#" target="_blank"
+                            >莲识玉肌粉底露 LIQUID FOUNDATION【发明专利产品】</a
+                          >
                         </div>
                         <div class="browse_price">
                           <strong>
@@ -364,12 +330,17 @@
                       <li>
                         <div class="browse_pic">
                           <a target="_blank">
-                            <img src="../assets/search/left_4.jpg" customtooltip="ProductName" />
+                            <img
+                              src="../assets/search/left_4.jpg"
+                              customtooltip="ProductName"
+                            />
                           </a>
                         </div>
                         <a href="#" target="_blank"></a>
                         <div class="browse_name">
-                          <a href="#" target="_blank">文创-重庆文化创意便签本</a>
+                          <a href="#" target="_blank"
+                            >文创-重庆文化创意便签本</a
+                          >
                         </div>
                         <div class="browse_price">
                           <strong>
@@ -386,7 +357,9 @@
                   </div>
 
                   <div class="view_clear">
-                    <a id="clearBrowsedProduct" href="#" class="cGray">清除我的浏览记录</a>
+                    <a id="clearBrowsedProduct" href="#" class="cGray"
+                      >清除我的浏览记录</a
+                    >
                   </div>
                   <!--结束-->
                 </ul>
@@ -396,36 +369,15 @@
         </div>
       </div>
     </div>
-    <my-footer></my-footer>
   </div>
 </template>
+
 <style scoped>
-/* 右边分类框 */
-#right {
-  width: 980px;
-  float: right;
-}
-.sub_category,.sub_property {
-  border: 1px solid #ddd;
-  padding: 0px 10px;
-}
-.sub_category ul,
-.sub_property ul {
-  width: 958px;
-  overflow: hidden;
-  padding: 10px 0px;
-}
-.sub_category ul li {
-  float: left;
-  margin-right: 20px;
-  height: 25px;
-  line-height: 25px;
-}
 
 /*左边分类框 */
 #search_botton {
-  width: 1200px;
-  margin: 0 auto;
+  /* width: 1200px; */
+  /* margin: 0 auto; */
   line-height: 1.8;
   font-family: microsoft yahei;
 }
@@ -664,7 +616,6 @@ a {
   font-weight: normal;
 }
 .category_list,
-.category_search,
 .category_browse {
   border-top: 2px solid #e62129;
 }

@@ -28,5 +28,30 @@ router.get('/search',(req,res)=>{
       }
     })
   });
+  
+    //分页路由
+  router.get('/paging',(req,res)=>{
+  let obj=req.query;
+  if(!obj.pno) obj.pno=1;
+  if(!obj.count) obj.count=20;
+  let start=(obj.pno-1)*obj.count;
+  let size=parseInt(obj.count);
+  let sql='SELECT * FROM pupu LIMIT ?,?';
+  pool.query(sql,[start,size],(err,result)=>{
+    if(err) throw err;
+    res.send(result);
+  });
+  })
+
+  //接口2
+  router.get('/search_left',(req,res)=>{
+    let category=req.query.category;
+    // console.log(category);
+    let sql="SELECT title,price,img,category FROM pupu WHERE category=?";
+    pool.query(sql,[category],(err,result)=>{
+        if(err) throw err;
+        res.send(result);
+    });
+});
 
 module.exports=router;
